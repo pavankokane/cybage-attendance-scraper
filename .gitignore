@@ -1,0 +1,14 @@
+# Environment variables (CRITICAL: Do not commit your .env file)
+.env
+
+# Data logs
+attendance-report.csv
+timetable-log.csv
+esplus-wfh-log.csv
+
+# IDE settings
+.vscode/
+.idea/
+
+#Python
+.python-version

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cybage-attendance-scraper"
+version = "1.0.0"
+description = "A Playwright scraper to track MIS attendance and live office hours."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Pavan Kokane", email = "pavankokane2013@gmail.com" }
+]
+dependencies = [
+    "playwright>=1.40.0",
+    "python-dotenv>=1.0.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pavankokane/cybage-attendance-scraper"
