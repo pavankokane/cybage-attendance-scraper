@@ -227,10 +227,12 @@ def show_monthly_report():
 
                 display_hours = hours_str
                 daily_hours = parse_hours_to_float(hours_str)
-                is_holiday = "holiday" in status
                 
-                if is_holiday:
+                if "holiday" in status:
                     display_hours += " (+8h Holiday)"
+                    daily_hours += 8.0
+                elif "planned leave" in status:
+                    display_hours += " (+8h Planned Leave)"
                     daily_hours += 8.0
 
                 if is_current_month:

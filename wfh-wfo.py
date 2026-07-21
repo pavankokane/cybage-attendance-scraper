@@ -188,6 +188,9 @@ def show_monthly_report():
             if "holiday" in status:
                 wfo_str += " (+8h H)"
                 wfo_val += 8.0
+            elif "planned leave" in status:
+                wfo_str += " (+8h PL)"
+                wfo_val += 8.0
 
             total_val = wfo_val + wfh_val
 

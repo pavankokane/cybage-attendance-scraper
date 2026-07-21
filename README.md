@@ -57,15 +57,7 @@ pip install -r requirements.txt
 
 ---
 
-## 3. Install Playwright Browsers
-
-```bash
-playwright install chromium
-```
-
----
-
-## 4. Set Up Your Credentials
+## 3. Set Up Your Credentials
 
 Create a file named **`.env`** in the project root.
 
